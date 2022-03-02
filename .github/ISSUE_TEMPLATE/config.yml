@@ -1,8 +1,5 @@
 blank_issues_enabled: true
 contact_links:
-  - name: GitHub Community Support
-    url: https://github.community/
-    about: Please ask and answer questions here.
-  - name: GitHub Security Bug Bounty
-    url: https://bounty.github.com/
-    about: Please report security vulnerabilities here.
+  - name: Other ways to contribute
+    url: https://github.com/mscape/mscape#contribute
+    about: Please find other options to contribute to the community metaverse landscape

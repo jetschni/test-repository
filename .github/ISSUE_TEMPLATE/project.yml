@@ -1,131 +1,62 @@
-name: Project submission
-description: Suggest a new project to the landscape
-title: ""
-labels: ["project"]
-assignees: ""
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees:
+  - octocat
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for contributing a new project to the metaverse landscape!
+        Thanks for taking the time to fill out this bug report!
   - type: input
-    id: name
+    id: contact
     attributes:
-      label: Project name
-      description: Add the name of your project
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
     validations:
-      required: true
+      required: false
   - type: textarea
-    id: description
+    id: what-happened
     attributes:
-      label: Description
-      description: Describe what your project is about 
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
     validations:
       required: true
   - type: dropdown
-    id: category
+    id: version
     attributes:
-      label: Category
-      description: Select a category for your project. If a category is missing, please open a [feature request](https://github.com/mscape/mscape/issues/new)
+      label: Version
+      description: What version of our software are you running?
       options:
-        - Virtual world
-        - Spaces
-        - Game
-        - Productivity
-        - Well-being
-        - Other
-    validations:
-      required: true
-  - type: input
-    id: logo
-    attributes:
-      label: Logo
-      description: Add a link to your logo, preferable as a .svg
-    validations:
-      required: true    
-  - type: input
-    id: twitter
-    attributes:
-      label: Twitter
-      description: Add the twitter handle of your project
-    validations:
-      required: false  
-  - type: input
-    id: token
-    attributes:
-      label: Token
-      description: Add the name of your token on coinmarketcap.com
-      placeholder: ex. FIL
-    validations:
-      required: false  
- - type: dropdown
-    id: status
-    attributes:
-      label: Project status
-      description: Select the status of your project
-      multiple: false
-      options:
-        - Announced
-        - Early Access
-        - Alpha
-        - Beta
-        - Live
-    validations:
-      required: true
- - type: dropdown
-    id: metaverse_native
-    attributes:
-      label: Metaverse native
-      description: Is your project focused and branded as metaverse?
-      multiple: false
-      options:
-        - "Yes"
-        - "No"
-    validations:
-      required: true      
- - type: dropdown
-    id: 3dworld
-    attributes:
-      label: 3D World
-      description: Does your project represent a 3D world?
-      multiple: false
-      options:
-        - "Yes"
-        - "No"
-    validations:
-      required: true        
- - type: dropdown
-    id: openworld
-    attributes:
-      label: Open World
-      description: Does your project offers an open world to its users?
-      multiple: false
-      options:
-        - "Yes"
-        - "No"
-    validations:
-      required: true  
- - type: dropdown
-    id: usercontent
-    attributes:
-      label: User generated content
-      description: Can user generate their own content in your project?
-      multiple: false
-      options:
-        - "Yes"
-        - "No"
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
     validations:
       required: true
   - type: dropdown
-    id: usercontent
+    id: browsers
     attributes:
-      label: Access
-      description: How can user access your project? If a method is missing please open a [feature request](https://github.com/mscape/mscape/issues/new)
+      label: What browsers are you seeing the problem on?
       multiple: true
       options:
-        - Web
-        - VR
-        - Propiertary client
-        - Other
-    validations:
-      required: true       
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

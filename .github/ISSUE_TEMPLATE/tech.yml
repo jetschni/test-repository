@@ -7,9 +7,9 @@ body:
       value: |
         Thank you for contributing a new project to the metaverse landscape!
   - type: input
-    id: project_name
+    id: technology_name
     attributes:
-      label: Technology name
+      label: Technology
       description: Add the name of the technology
     validations:
       required: true
@@ -20,3 +20,69 @@ body:
       description: Describe what the technology is about 
     validations:
       required: true 
+  - type: input
+    id: company_name
+    attributes:
+      label: Company
+      description: Add the name of the company behind the technology
+    validations:
+      required: true  
+  - type: textarea
+    id: logo
+    attributes:
+      label: Logo
+      description: Add a link to your logo or upload it by drag and drop into the textfield, preferable as a .svg
+    validations:
+      required: true            
+  - type: input
+    id: website
+    attributes:
+      label: Website
+      description: Add a link to the website of the technology
+    validations:
+      required: true    
+  - type: input
+    id: twitter
+    attributes:
+      label: Twitter
+      description: Add the twitter handle if available
+    validations:
+      required: false  
+  - type: input
+    id: github
+    attributes:
+      label: Twitter
+      description: Add the github handle to the technology if available
+    validations:
+      required: false
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Layer
+      description: Select the layer in the framework for the technology
+      multiple: false
+      options:
+        - Experience
+        - User capabilities
+        - Infrastructure
+    validations:
+      required: true
+  - type: input
+    id: Categories
+    attributes:
+      label: Categories
+      description: Add one or more categories for the project seperated by commas 
+      placeholder: ex. Fast geo-replicated caches, shared compute
+    validations:
+      required: false
+  - type: dropdown
+    id: metaverse_native
+    attributes:
+      label: Metaverse native
+      description: Does the technology focuses primarily on the metaverse?
+      multiple: false
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true    

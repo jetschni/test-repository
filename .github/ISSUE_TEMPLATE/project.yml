@@ -1,5 +1,5 @@
-name: Project submission
-description: Suggest a new project to the landscape
+name: Bug Report
+description: File a bug report
 title: ""
 labels: ["project"]
 assignees: ""

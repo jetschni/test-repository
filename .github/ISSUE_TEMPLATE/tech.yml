@@ -1,9 +1,22 @@
 name: Technology submission
 description: Suggest a new technology to the landscape
-labels: ["project"]
+labels: ["technology"]
 body:
   - type: markdown
     attributes:
       value: |
         Thank you for contributing a new project to the metaverse landscape!
-#to be added        
+  - type: input
+    id: project_name
+    attributes:
+      label: Technology name
+      description: Add the name of the technology
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe what the technology is about 
+    validations:
+      required: true 

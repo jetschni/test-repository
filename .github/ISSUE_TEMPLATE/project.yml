@@ -1,5 +1,5 @@
-name: Bug Report
-description: File a bug report
+name: Project submission
+description: Suggest a new project to the landscape
 labels: ["project"]
 body:
   - type: markdown
@@ -13,3 +13,117 @@ body:
       description: Add the name of your project
     validations:
       required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe what your project is about 
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Select a category for your project. If a category is missing, please open a [feature request](https://github.com/mscape/mscape/issues/new)
+      options:
+        - Virtual world
+        - Spaces
+        - Game
+        - Productivity
+        - Well-being
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: logo
+    attributes:
+      label: Logo
+      description: Add a link to your logo, preferable as a .svg
+    validations:
+      required: true    
+  - type: input
+    id: twitter
+    attributes:
+      label: Twitter
+      description: Add the twitter handle of your project
+    validations:
+      required: false  
+  - type: input
+    id: token
+    attributes:
+      label: Token
+      description: Add the name of your token on coinmarketcap.com
+      placeholder: ex. FIL
+    validations:
+      required: false  
+ - type: dropdown
+    id: status
+    attributes:
+      label: Project status
+      description: Select the status of your project
+      multiple: false
+      options:
+        - Announced
+        - Early Access
+        - Alpha
+        - Beta
+        - Live
+    validations:
+      required: true
+ - type: dropdown
+    id: metaverse_native
+    attributes:
+      label: Metaverse native
+      description: Is your project focused and branded as metaverse?
+      multiple: false
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true      
+ - type: dropdown
+    id: 3dworld
+    attributes:
+      label: 3D World
+      description: Does your project represent a 3D world?
+      multiple: false
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true        
+ - type: dropdown
+    id: openworld
+    attributes:
+      label: Open World
+      description: Does your project offers an open world to its users?
+      multiple: false
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true  
+ - type: dropdown
+    id: usercontent
+    attributes:
+      label: User generated content
+      description: Can user generate their own content in your project?
+      multiple: false
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+  - type: dropdown
+    id: usercontent
+    attributes:
+      label: Access
+      description: How can user access your project? If a method is missing please open a [feature request](https://github.com/mscape/mscape/issues/new)
+      multiple: true
+      options:
+        - Web
+        - VR
+        - Propiertary client
+        - Other
+    validations:
+      required: true       

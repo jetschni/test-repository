@@ -3,7 +3,7 @@ description: Suggest a new project to the landscape
 labels: ["project"]
 body:
   - type: input
-    id: name
+    id: project-name
     attributes:
       label: Project name
       description: Add the name of your project

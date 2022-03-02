@@ -34,11 +34,11 @@ body:
         - Other
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: logo
     attributes:
       label: Logo
-      description: Add a link to your logo, preferable as a .svg
+      description: Add a link to your logo or upload it by drag and drop into the textfield, preferable as a .svg
     validations:
       required: true    
   - type: input
@@ -70,6 +70,10 @@ body:
         - Live
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        # Additional information about your project
   - type: dropdown
     id: metaverse_native
     attributes:

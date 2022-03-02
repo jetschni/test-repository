@@ -2,10 +2,6 @@ name: Project submission
 description: Suggest a new project to the landscape
 labels: ["project"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thank you for contributing a new project to the metaverse landscape!
   - type: input
     id: name
     attributes:

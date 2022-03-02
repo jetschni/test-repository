@@ -24,7 +24,7 @@ body:
     id: category
     attributes:
       label: Category
-      description: Select a category for your project. If a category is missing, please open a [feature request](https://github.com/mscape/mscape/issues/new)
+      description: Select a category for your project. If a category is missing, please open a [feature request](./issues/new)
       options:
         - Virtual world
         - Spaces

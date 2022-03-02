@@ -92,7 +92,7 @@ body:
         - "No"
     validations:
       required: true        
- - type: dropdown
+  - type: dropdown
     id: openworld
     attributes:
       label: Open World

@@ -70,7 +70,7 @@ body:
         - Live
     validations:
       required: true
- - type: dropdown
+  - type: dropdown
     id: metaverse_native
     attributes:
       label: Metaverse native
@@ -81,7 +81,7 @@ body:
         - "No"
     validations:
       required: true      
- - type: dropdown
+  - type: dropdown
     id: 3dworld
     attributes:
       label: 3D World
@@ -103,7 +103,7 @@ body:
         - "No"
     validations:
       required: true  
- - type: dropdown
+  - type: dropdown
     id: usercontent
     attributes:
       label: User generated content

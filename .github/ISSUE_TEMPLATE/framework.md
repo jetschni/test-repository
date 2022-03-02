@@ -2,7 +2,7 @@
 name: Framework request
 about: Suggest changes or additions to the framework
 title: ''
-labels: 'framework'
+labels: ''
 assignees: ''
 
 ---

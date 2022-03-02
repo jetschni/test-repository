@@ -82,7 +82,7 @@ body:
     validations:
       required: true      
   - type: dropdown
-    id: 3dworld
+    id: world3D
     attributes:
       label: 3D World
       description: Does your project represent a 3D world?
